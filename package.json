@@ -1,0 +1,14 @@
+{
+  "name": "tip-calculator-app-main",
+  "version": "1.0.0",
+  "description": "A little tip calculator to avoid your friends to trick on you",
+  "main": "index.js",
+  "scripts": {
+    "watch:css": "node-sass sass/app.scss app.css -w"
+  },
+  "author": "musread",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
