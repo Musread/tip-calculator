@@ -1,3 +1,17 @@
+.app {
+  max-width: 90rem;
+  height: 100%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.logo {
+  align-self: center;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

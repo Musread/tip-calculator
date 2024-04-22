@@ -1,0 +1,111 @@
+.tip-calculator {
+  background-color: var(--white);
+  padding: 2.5rem;
+  border-radius: 2rem;
+  display: flex;
+
+  // LEFT SIDE
+  &__inputs-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 3rem;
+    padding: 2rem 4rem 1rem 1rem;
+  }
+
+  &__input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__input-heading {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: var(--dark-grayish-cyan);
+
+    &--white {
+      color: var(--white);
+    }
+  }
+
+  &__error-message {
+    color: var(--saturated-orange);
+  }
+
+  &__input-field {
+    position: relative;
+  }
+
+  &__input-icon {
+    width: 1.2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1rem;
+  }
+
+  &__percentages {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  &__percentage {
+    background-color: var(--very-dark-cyan);
+    color: var(--white);
+    font-family: inherit;
+    font-size: 2.4rem;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+
+    &:hover,
+    &:active {
+      cursor: pointer;
+      background-color: var(--strong-cyan);
+      color: var(--very-dark-cyan);
+    }
+  }
+
+  // RIGHT SIDE
+  &__results-container {
+    background-color: var(--very-dark-cyan);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem;
+    border-radius: 1rem;
+  }
+
+  &__result-section {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__result-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__subtitle {
+    color: var(--dark-grayish-cyan);
+  }
+
+  &__result-number {
+    font-size: 4rem;
+    color: var(--strong-cyan);
+  }
+}

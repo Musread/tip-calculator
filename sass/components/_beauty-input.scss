@@ -1,0 +1,47 @@
+.beauty-input {
+  color: var(--very-dark-cyan);
+  width: 100%;
+  font-family: inherit;
+  font-size: 2.4rem;
+  position: relative;
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  background-color: var(--very-light-grayish-cyan);
+  text-align: end;
+  // CSS rule to remove input arrows for Firefox
+  -moz-appearance: textfield;
+  border-radius: 5px;
+
+  // &:hover,
+  // &:focus {
+  //   border: 2px solid var(--strong-cyan);
+  // }
+
+  &:focus {
+    border: 2px solid var(--strong-cyan);
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: var(--grayish-cyan);
+  }
+
+  &--custom {
+    &::placeholder {
+      color: var(--dark-grayish-cyan);
+    }
+  }
+
+  // Chrome wekbit for removing input arrows
+  &::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+}

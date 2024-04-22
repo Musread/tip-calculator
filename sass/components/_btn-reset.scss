@@ -1,0 +1,15 @@
+.btn-reset {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+  font-family: inherit;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--light-grayish-cyan);
+  }
+}

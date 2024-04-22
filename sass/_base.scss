@@ -16,9 +16,16 @@
   --dark-grayish-cyan: hsl(186, 14%, 43%);
   --light-grayish-cyan: hsl(185, 41%, 84%);
   --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --saturated-orange: hsl(12, 76%, 61%);
 }
 
 html {
   font-family: "Space Mono", sans-serif;
   font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  font-size: 1.4rem;
+  background-color: var(--light-grayish-cyan);
 }
