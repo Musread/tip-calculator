@@ -1,6 +1,7 @@
-@import "base";
-@import "page";
+@import "utils/helpers";
+@import "utils/mixins";
 @import "components/beauty-input";
 @import "components/tip-calculator";
 @import "components/btn-reset";
-@import "utils/helpers";
+@import "base";
+@import "page";

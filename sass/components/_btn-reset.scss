@@ -12,4 +12,9 @@
     cursor: pointer;
     background-color: var(--light-grayish-cyan);
   }
+
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.3;
+  }
 }

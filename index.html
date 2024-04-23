@@ -30,14 +30,14 @@
         <!-- INPUT SECTION -->
         <div class="tip-calculator__inputs-container">
           <section class="tip-calculator__input-section">
-            <div class="tip-calculator__input-heading">
-              <span class="tip-calculator__title">Bill</span>
-              <span class="tip-calculator__error-message u-hidden"
-                >Not a valid value</span
-              >
-            </div>
+            <span class="tip-calculator__title">Bill</span>
+
             <div class="tip-calculator__input-field">
-              <input type="number" class="beauty-input" placeholder="0" />
+              <input
+                type="number"
+                class="beauty-input bill-input"
+                placeholder="0"
+              />
               <img
                 src="images/icon-dollar.svg"
                 alt="dollar icon"
@@ -47,37 +47,47 @@
           </section>
 
           <section class="tip-calculator__input-section">
-            <div class="tip-calculator__input-heading">
-              <span class="tip-calculator__title u-margin-bottom"
-                >Select tip %</span
-              >
-              <span class="tip-calculator__error-message u-hidden"
-                >Not a valid value</span
-              >
-            </div>
-            <div class="tip-calculator__percentages">
-              <button class="tip-calculator__percentage">5%</button>
-              <button class="tip-calculator__percentage">10%</button>
-              <button class="tip-calculator__percentage">15%</button>
-              <button class="tip-calculator__percentage">25%</button>
-              <button class="tip-calculator__percentage">50%</button>
+            <span class="tip-calculator__title u-margin-bottom"
+              >Select tip %</span
+            >
+
+            <div class="tip-calculator__tip-buttons">
+              <button class="tip-calculator__tip-button" data-tip="5">
+                5%
+              </button>
+              <button class="tip-calculator__tip-button" data-tip="10">
+                10%
+              </button>
+              <button class="tip-calculator__tip-button" data-tip="15">
+                15%
+              </button>
+              <button class="tip-calculator__tip-button" data-tip="25">
+                25%
+              </button>
+              <button class="tip-calculator__tip-button" data-tip="50">
+                50%
+              </button>
               <input
                 type="number"
-                class="beauty-input beauty-input--custom"
+                class="beauty-input beauty-input--custom tip-input"
                 placeholder="Custom"
               />
             </div>
           </section>
 
           <section class="tip-calculator__input-section">
-            <div class="tip-calculator__input-heading">
+            <div class="tip-calculator__heading-wrapper">
               <span class="tip-calculator__title">Number of people</span>
-              <span class="tip-calculator__error-message u-hidden"
+              <span class="tip-calculator__title--error u-hidden people-error"
                 >Can't be zero</span
               >
             </div>
             <div class="tip-calculator__input-field">
-              <input type="number" class="beauty-input" placeholder="0" />
+              <input
+                type="number"
+                class="beauty-input people-input"
+                placeholder="0"
+              />
               <img
                 src="images/icon-person.svg"
                 alt="people icon"
@@ -87,32 +97,32 @@
           </section>
         </div>
         <!-- OUTPUT SECTION -->
-        <div class="tip-calculator__results-container">
-          <section class="tip-calculator__result-section">
-            <div class="tip-calculator__result-field">
+        <div class="tip-calculator__outputs-container">
+          <section class="tip-calculator__output-section u-margin-top">
+            <div class="tip-calculator__output-field">
               <div class="tip-calculator__text">
                 <span class="tip-calculator__title tip-calculator__title--white"
                   >Tip amount</span
                 >
                 <span class="tip-calculator__subtitle">/ person</span>
               </div>
-              <div class="tip-calculator__result-number">
-                <span>$</span>0.00
+              <div class="tip-calculator__output-number">
+                <span>$</span><span class="tip-amount">0.00</span>
               </div>
             </div>
-            <div class="tip-calculator__result-field">
+            <div class="tip-calculator__output-field">
               <div class="tip-calculator__text">
                 <span class="tip-calculator__title tip-calculator__title--white"
                   >Total</span
                 >
                 <span class="tip-calculator__subtitle">/ person</span>
               </div>
-              <div class="tip-calculator__result-number">
-                <span>$</span>0.00
+              <div class="tip-calculator__output-number">
+                <span>$</span><span class="total-amount">0.00</span>
               </div>
             </div>
           </section>
-          <button class="btn-reset">reset</button>
+          <button class="btn-reset btn-reset--disabled">reset</button>
         </div>
       </div>
     </main>
@@ -123,4 +133,5 @@
       >. Coded by <a href="#">Your Name Here</a>.
     </div> -->
   </body>
+  <script src="app.js"></script>
 </html>

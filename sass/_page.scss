@@ -6,6 +6,12 @@
   flex-direction: column;
   justify-content: center;
   gap: 6rem;
+
+  @include respond {
+    justify-content: space-around;
+    gap: 4rem;
+    margin-top: 5rem;
+  }
 }
 
 .logo {

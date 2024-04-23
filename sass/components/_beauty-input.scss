@@ -19,14 +19,12 @@
 
   &:focus {
     border: 2px solid var(--strong-cyan);
+    outline: none;
   }
 
   &:hover {
+    border: 2px solid var(--strong-cyan);
     cursor: pointer;
-  }
-
-  &:focus {
-    outline: none;
   }
 
   &::placeholder {
@@ -36,6 +34,12 @@
   &--custom {
     &::placeholder {
       color: var(--dark-grayish-cyan);
+    }
+  }
+
+  &--error {
+    &:focus {
+      border: 2px solid var(--saturated-orange);
     }
   }
 
