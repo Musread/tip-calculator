@@ -37,7 +37,7 @@ And this is for **mobile screens**:
 
 ### Links
 
-- Live Site URL: **A ajouter**
+- Live Site URL: https://musread.github.io/tip-calculator/
 
 ## My process
 
