@@ -52,11 +52,11 @@ And this is for **mobile screens**:
 
 ### Regular expressions
 
-For analyzing what users input, I need to use a reliable functionality. I first laid on Number conversion functions, but I quickly realized it was not perfect. This is why I choose regular expressions. I rely on the official MDN docs as usual to learn more about it. Here's the link : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expression
+For analyzing what users input, I need to use a reliable functionality. I first laid on conversion functions from the **Number** class, but I quickly realized it was not perfect. This is why I choose regular expressions. I rely on the official MDN docs as usual to learn more about it. Here's the link : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expression
 
 ### Number inputs vs text inputs
 
-When I was building inputs, I quickly chose to make them "number-typed". But I bumped into a problem while I was implementing conditional logics. Indeed, when I tried to retrieve invalid values from number inputs, they give me an empty string. This [Stackoverflow article](https://stackoverflow.blog/2022/12/26/why-the-number-input-is-the-worst-input/) helped me to choose the right solution.
+When I was building inputs, I quickly chose to make them "number-typed". But I bumped into a problem while I was implementing conditional logics. Indeed, when I tried to retrieve invalid values from number inputs, it gave me an empty string. This [Stackoverflow article](https://stackoverflow.blog/2022/12/26/why-the-number-input-is-the-worst-input/) helped me to choose the right solution.
 
 ### Formatting numbers
 
