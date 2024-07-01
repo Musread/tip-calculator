@@ -181,15 +181,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 6rem; }
+  gap: 4rem; }
   @media only screen and (max-width: 23.4375em) {
     .app {
-      justify-content: space-around;
-      gap: 4rem;
+      justify-content: space-between;
       margin-top: 5rem; } }
 
 .logo {
-  align-self: center; }
+  align-self: center;
+  width: 10rem; }
 
 .attribution {
   font-size: 11px;
